@@ -29,6 +29,7 @@ The Earthquake Visulization Map:
 ## Resources
 #### Data Sources:
 http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
+
 https://github.com/fraxen/tectonicplates
 #### Software/Tools: 
 JavaScript, Leaflet, VSCode, HTML, CSS, Chrome DevTool
