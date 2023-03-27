@@ -42,14 +42,9 @@ function createMap(earthquakes) {
     "Topographic Map": topo
   };
 
-  // Create an overlay object for earthquake data
+  // Create an overlay object to hold our overlay.
   var overlayMaps = {
     Earthquakes: earthquakes
-  };
-
-// Create an overlay object for tectonic data
-  var overlayMaps = {
-    Tectonic: tectonic
   };
 
   // Create our map, giving it the streetmap and earthquakes layers to display on load.
@@ -58,10 +53,12 @@ function createMap(earthquakes) {
       37.09, -95.71
     ],
     zoom: 5,
-    layers: [street, earthquakes, tectonic]
+    layers: [street, earthquakes]
   });
 
-  // Create a layer control, pass it baseMaps and overlayMaps...add control layer to map
+  // Create a layer control.
+  // Pass it our baseMaps and overlayMaps.
+  // Add the layer control to the map.
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
   }).addTo(myMap);
