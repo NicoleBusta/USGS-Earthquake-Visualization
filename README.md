@@ -22,6 +22,7 @@ The Earthquake Visulization Map:
   <li>Each marker can be clicked on to get further details on the earthquake (location, date, and magnitude).</li>
 </ul>
 <i> Below is an image of the interactive map.</i>
+<img src = "images/2-BasicMap.png">
 
 
 
