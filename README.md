@@ -1,4 +1,4 @@
-# USGS Earthquake Visualization
+# USGS Earthquake Interactive Map
 
 <img src = "images/1-Logo.png">
 
