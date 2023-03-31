@@ -119,9 +119,10 @@ function createFeatures(earthquakeData) {
       var ranges = [-10, 10, 30, 50, 70, 90]
       var colors = ["chartreuse", "yellow", "wheat", "orange", "tomato", "red"]
             legend = "<strong>Magnitude</strong>";
-      for (var i = 0; i < ranges.length; i++) {
-        div.innerHTML += "<div style='background: "+ colors[i] + "; height: 10px; '></div>" + ranges[i-1] +"-"+ranges[i] + "<br/>"
+      for (var i = 0; i < ranges.length-1; i++) {
+        div.innerHTML += "<div style='background: " + colors[i] + ";  height: 10px; width: 10px; display: inline-block; '></div> " + ranges[i] +"-"+ranges[i+1] +  "<br/>"
       }
+      div.innerHTML += "<div style='background: " + colors[ranges.length-1] + ";  height: 10px; width: 10px; display: inline-block; '></div> " + ranges[ranges.length-1] +"+" +  "<br/>"
       return div
     };
 
